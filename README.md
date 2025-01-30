@@ -28,9 +28,28 @@ A MicroPython script for the Waveshare ESP32-S3 Touch LCD 1.28" that displays we
    # Wi-Fi credentials
    WIFI_SSID = "YOUR_WIFI_SSID"
    WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
-   
-   # API configuration (api should work out of the box)
-   GEOLOCATION_API_URL = "http://ip-api.com/json/"
-   WORLD_TIME_API_URL = "https://worldtimeapi.org/api/timezone/{timezone}"
-   WEATHER_API_URL = "http://api.open-meteo.com/v1/forecast..."
+
+## API Services Used
+- IP-API.com (Geolocation)
+- WorldTimeAPI.org (Time synchronization)
+- Open-Meteo.com (Weather data)
+
+## API configuration (api should work out of the box)
+- GEOLOCATION_API_URL = "http://ip-api.com/json/"
+- WORLD_TIME_API_URL = "https://worldtimeapi.org/api/timezone/{timezone}"
+- WEATHER_API_URL = "http://api.open-meteo.com/v1/forecast..."
+
+## Troubleshooting
+- No display: Check SPI connections and backlight control
+- Wi-Fi issues: Verify credentials and network stability
+- API failures: Monitor serial output for error messages
+- Touch unresponsive: Ensure proper initialization
+
+## License
+- MIT License - See LICENSE file
+
+## Resources
+- Waveshare Wiki https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.28
+- MicroPython Documentation
+- Open-Meteo API Docs
 
